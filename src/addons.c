@@ -16,3 +16,8 @@ int isspecial(char chr) {
 int isspace(char chr) {
     return chr == ' ';
 }
+
+char peek(char* string, int index, int size) {
+    if(index+1 >= size) return '\0';
+    return string[index + 1];
+}
